@@ -1,4 +1,8 @@
 import streamlit as st
 from logic import greet
-st.title("hello world")
-st.write(greet())
+
+name= st.text_input("Your Name")
+
+if name: 
+    st.write(greet(name))
+
